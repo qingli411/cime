@@ -1347,6 +1347,12 @@ using a fortran linker.
   </SLIBS>
 </compiler>
 
+<compiler MACH="eoas" COMPILER="gnu">
+  <FFLAGS>
+    <append> -fallow-argument-mismatch </append>
+  </FFLAGS>
+</compiler>
+
 <compiler MACH="userdefined">
   <CONFIG_ARGS>
     <base/>
