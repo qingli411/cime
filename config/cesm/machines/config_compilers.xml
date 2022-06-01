@@ -1349,8 +1349,11 @@ using a fortran linker.
 
 <compiler MACH="eoas" COMPILER="gnu">
   <FFLAGS>
-    <append> -fallow-argument-mismatch </append>
+    <append> -fallow-argument-mismatch -fallow-invalid-boz</append>
   </FFLAGS>
+  <SLIBS>
+    <append> -llapack -lblas</append>
+  </SLIBS>
 </compiler>
 
 <compiler MACH="userdefined">
